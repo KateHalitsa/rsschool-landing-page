@@ -4,10 +4,42 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/header.module.scss">
     <title>rsschool-landing-page</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <header class="header">
+              <div class="container header__container">
+              <div class="logo">
+                  <!--<img src="ico/icon.svg" alt="icon" width="20" height="20">-->
+                  Phamtasmogoria
+              </div>
+              <nav class="nav" id="nav">
+                      <ul class="list-reset nav__list">
+                          <li class="nav__item"> 
+                              <a href="#hero" class="nav__link">Home</a></li>
+                          <li class="nav__item">
+                              <a href="#premiere" class="nav__link">Premiere</a></li>
+                          <li class="nav__item">
+                              <a href="#about" class="nav__link">About</a></li>
+                          <li class="nav__item">
+                              <a href="#contacts" class="nav__link">Contact us</a></li>
+                      </ul>
+              </nav>
+              <div class="theme_changer">
+                <button>
+                  <img src="./src/assets/icons/chandelier-on.png" alt="icon">
+                </button>
+              </div>
+                 <button class="btn-reset burger" id="burger">
+                      <span class="burger__line"></span>
+                      <span class="burger__line"></span>
+                  </button>
+          </button>
+      </div>
+      </header>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
