@@ -161,9 +161,14 @@ header .container {
     z-index: 100;
     right: 70px;
     top:2px;
+    background-color: var(--accent-bg);
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
     img{
       width: 80px;
       height: 80px;
-
     }
 }
