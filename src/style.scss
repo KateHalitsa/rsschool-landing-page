@@ -1,3 +1,4 @@
+@import url(../src/styles/premier.scss);
 @font-face {
   font-family: 'Logotype';
   src: url('../src/assets/fonts/Pizzicato-Cyr.otf') format('opentype');
@@ -17,6 +18,7 @@
     padding: 0;
 }
 html, body {
+  max-width: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -92,8 +94,8 @@ main{
   width: 100%;
 }
 .wapper{
-      display: flex;
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     padding: 0;
     gap: 20px;
@@ -110,9 +112,11 @@ button{
 }
 
 h2 {
-  font-family: var(--heading);
+  font-family: var(--logo);
   font-weight: 500;
-  color: var(--text-h);
+  color: var(--accent-border);
+    text-transform: uppercase;
+
 }
 
 h1 {
@@ -128,12 +132,12 @@ h1 {
     -webkit-text-stroke: 2px var(--accent-border); 
 }
 h2 {
-  font-size: 24px;
+  font-size: 70px;
   line-height: 118%;
   letter-spacing: -0.24px;
   margin: 0 0 8px;
   @media (max-width: 1024px) {
-    font-size: 20px;
+    font-size: 40px;
   }
 }
 p {
@@ -161,66 +165,9 @@ p {
   .burger { 
     display: block; 
 }
-
-    .nav-links {
-        display: none; 
-    }
-
-    .nav-links.active {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;      
-    right: 0;        
-    width: 100%;     
-    background-color: black;
-    padding: 20px 0; 
-    z-index: 999; 
-  
+header{
+  overflow: hidden;
 }
-
-    .nav ul {
-        flex-direction: column;
-        row-gap: 30px;
-    }
-
-    
-  .grid {
-    grid-template-columns: repeat(6, 1fr);
-  }
-
-  .nav {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    overflow-y: auto;
-    background-color: var(--bg);
-    transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
-    transform: translateX(100%);
-    visibility: hidden;
-    background-color: black;
-    padding: 20px 0;
-    z-index: 1000;
-    justify-content: center;
-  }
-
-  .form__btn {
-    height: 40px;
-  }
-
-  .nav--active {
-    transform: none;
-    visibility: visible;
-  }
-
-  .nav__list {
-    padding: 50px 0;
-    flex-direction: column;
-  }
-
-  
 }
 
 @media (max-width: 380px) {
@@ -242,4 +189,12 @@ p {
     padding: 8px 12px;
     font-size: 14px;
 }
+}
+.heading{
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
 }

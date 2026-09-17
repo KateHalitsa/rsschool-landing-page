@@ -1,0 +1,59 @@
+.premier{
+    width: 100%;
+    height: 1200px;
+    display: inline;
+    .wapper{
+        flex-direction: column;
+        
+    }
+    
+}
+/*hr{
+        border: none;
+        height: 2px;
+        background-color: var(--accent-border);
+        width: 50%;
+    }*/
+.slider{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+    .visable-part{
+     width: 500px;
+     overflow: hidden;
+     margin: auto;
+    }
+    .slider-line {
+    width: 1500px;
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+    transform: translate(-500px);//потом добавлю js
+}
+    .slider-img{
+       width: 500px;
+       height: 750px;
+       opacity: 1;
+       transition: opcity 0.5s ease;
+       &.active{
+        opacity: 1;
+       }
+    }
+    img.controlls {
+        position: absolute;
+        top:50%;
+        z-index: 1;
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+        &.prev{
+            left: 10px;
+            transform: scaleX(-1);
+        }
+        &.next{
+            right: 10px;
+        }
+    }
+}
