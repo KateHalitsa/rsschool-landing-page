@@ -1,0 +1,5 @@
+Pizzicato Cyr is my take on Pizzicato retro-style display font, adding Cyrillic supports for Russian, Ukrainian and Belorussian.
+
+Pizzicato Cyr is distributed under The SIL Open Font License (OFL) and is completely free for both personal and commercial use.
+
+For the latest free version please visit dimka.com/fonts/pizzicatocyr

@@ -1,0 +1,238 @@
+@import url(../src/styles/premier.scss);
+@import url(../src/styles/about.scss);
+@import url(../src/styles/cast.scss);
+@import url(../src/styles/footer.scss);
+@import url(../src/styles/catalog.scss);
+
+@font-face {
+  font-family: 'Logotype';
+  src: url('../src/assets/fonts/Pizzicato-Cyr.otf') format('opentype');
+  font-style: normal; 
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Reader';
+  src: url('../src/assets/fonts/Zeger-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+    box-sizing: border-box;
+     margin: 0;
+    padding: 0;
+}
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+html.stop-scroll {
+    overflow: hidden;
+  }
+body.stop-scroll {
+    overflow: hidden;
+  }
+:root {
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: #fff;
+  --border: #e5e4e7;
+  --code-bg: #f4f3ec;
+  --accent: #FDB515;
+  --accent-bg: #FCE9AB;
+  --accent-border: #ce8d02;
+  --social-bg: rgba(244, 243, 236, 0.5);
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+
+  --logo:'Logotype',sans-serif;
+  --sans:  'Reader', sans-serif;
+  --heading: system-ui, 'Segoe UI' sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+[data-theme="dark"] {
+    --text: #9ca3af;
+    --text-h: #f3f4f6;
+    --bg: #4b057d;
+    --border: #2e303a;
+    --code-bg: #1f2028;
+    --accent: #6118ab;
+    --accent-bg: rgb(234, 220, 249);
+    --accent-border: rgb(131, 47, 215);
+    --social-bg: rgba(47, 48, 58, 0.5);
+    --sans:var(--accent-bg);
+    --shadow:
+      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+    .switcher{
+      --accent: #FDB515;
+    }
+    .content button {
+      color: var(--accent-bg);
+    }
+    h1, .welcome p{
+        --accent: #FDB515;
+  --accent-bg: #FCE9AB;
+  --accent-border: #ce8d02;
+    }
+    h2,.description, p, button,td,.buy,.option,.others,.show{
+      color: var(--accent-bg);
+    }
+    .social-icon,.contact-icon{
+          filter: hue-rotate(201deg);
+    }
+    .chandelier-icon{
+        background-image: url('../assets/icons/chandelier-off.png');
+        @media (max-width: 768px) {
+        background-image: url('../assets/icons/chandel-off.png');
+    
+    }
+    }
+
+  
+  #social .button-icon {
+    filter: invert(1) brightness(2);
+  }
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+}
+main{
+  width: 100%;
+}
+.wapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 20px;
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+}
+img {
+    background: rgba(255, 0, 0, 0);
+}
+button,.show{
+  background-color:  rgba(255, 0, 0, 0);
+  border: 0;
+}
+
+h2 {
+  font-family: var(--logo);
+  font-weight: 500;
+  color: var(--accent-border);
+    text-transform: uppercase;
+
+}
+
+h1 {
+  font-size: 150px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+  font-family: var(--logo);
+  color: var(--accent-bg);
+   @media (max-width: 768px) {
+            font-size: 90px;
+            margin: 0px 0;
+       }
+    @media (max-width: 500px) {
+        font-size: 70px;
+    }
+  -webkit-text-stroke: 2px var(--accent-border); 
+}
+h2 {
+  font-size: 70px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 40px;
+  }
+}
+p {
+  margin: 0;
+}
+
+@media (min-width: 1440px) {
+    body {
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    section {
+        width: 100%;
+        overflow: hidden;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    body {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+  .burger { 
+    display: block; 
+}
+header{
+  overflow: hidden;
+}
+}
+
+@media (max-width: 380px) {
+  body {
+      max-width: 380px;
+      margin: 0 auto;
+  }
+  .hero-wapper .hero-container{
+    display: none;
+  }
+  section {
+      padding: 20px;   
+  }
+
+  .header__container {
+  justify-content: initial;
+}
+  .btn {
+    padding: 8px 12px;
+    font-size: 14px;
+}
+}
+.heading{
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+button,.show {
+   &:hover {
+    transform: scale(1.2);
+        cursor: pointer;
+    }
+}
