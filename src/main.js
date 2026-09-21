@@ -23,27 +23,22 @@ import './styles/hero.scss'
 
 setupCounter(document.querySelector('#counter'))
 */
-const descriptions = document.querySelectorAll('.description');
 
-descriptions.forEach((description) => {
-    const button = description.querySelector('.description__button');
+const themeButton = document.querySelector('#theme-button');
 
-    button.addEventListener('click', () => {
-        description.classList.toggle('description--expanded');
+const savedTheme = localStorage.getItem('theme');
 
-        const isExpanded = description.classList.contains('description--expanded');
+if (savedTheme) {
+    document.body.dataset.theme = savedTheme;
+} else {
+    document.body.dataset.theme = 'light';
+}
 
-        button.textContent = isExpanded ? 'Less':'More';
-    });
-});
-const options = document.querySelectorAll('.option');
+themeButton.addEventListener('click', () => {
+    const currentTheme = document.body.dataset.theme;
 
-options.forEach((option) => {
-    option.addEventListener('click', () => {
-        options.forEach((item) => {
-            item.classList.remove('active');
-        });
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
 
-        option.classList.add('active');
-    });
+    document.body.dataset.theme = newTheme;
+    localStorage.setItem('theme', newTheme);
 });
