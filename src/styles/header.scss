@@ -59,6 +59,10 @@ header .container {
   font-weight: 400;
   font-size: 50px;
   font-family: var(--logo);
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 }
 
 .burger {
@@ -160,7 +164,7 @@ header .container {
 .theme_changer{
     position: absolute;
     z-index: 100;
-    right: 70px;
+    right: max(70px, calc(50vw - 650px));
     top:2px;
     background-color: var(--accent-bg);
     border-radius: 50px;

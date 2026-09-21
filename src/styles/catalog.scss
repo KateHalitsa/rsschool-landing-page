@@ -117,4 +117,20 @@ table{
             border-bottom: 2px solid var(--accent-border);
         }
     } 
+    
+}
+@media (max-width: 500px) {
+  .catalog {
+    .wapper {
+      .shows {
+        flex-direction: column;
+        margin: 20px;
+
+        .card {
+          width: 100%;
+          padding: 10px;
+        }
+      }
+    }
+  }
 }

@@ -2,15 +2,16 @@
     width: 100%;
     background-color: black;
     overflow: hidden;
+    padding: 0;
     .wapper{
         flex-direction: row;
     }
 }
 .content{
     width: 100%;
-    height: 500px;
+    height: fit-content;
     position: relative;
-
+    margin: 0 0 -10px;
     .image-container {
         position: relative;
         display: inline-block;
@@ -18,7 +19,7 @@
     img{
         display: block;
         width: 100%;
-        height: 500px;
+        aspect-ratio: 8 / 3;
         object-fit: cover;
     }
     &::after {
@@ -50,14 +51,21 @@
 }
 .welcome{
     position: absolute;
-    top:-10px;
+    top:20%;
     z-index: 100;
     height: 500px;
     display: flex;
     flex-direction: column;
     gap:50px;
     padding: 20px;
-    justify-content: center;
+    @media (max-width: 1024px) {
+            gap: 25px;
+            top:10%
+        }
+    @media (max-width: 500px) {
+        gap: 15px;
+        top:-5%
+    }
     p{
         font-family: var(--sans);
         font-size: 40px;
@@ -65,5 +73,15 @@
         &.little{
             font-size: 20px;
         }
+        
+        @media (max-width: 768px) {
+            font-size: 20px;
+       }
+       @media (max-width: 500px) {
+        font-size: 15px;
+        &.little{
+            font-size: 10px;
+        }
+    }
     }
 }
