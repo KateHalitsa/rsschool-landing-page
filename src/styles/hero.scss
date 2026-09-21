@@ -33,20 +33,22 @@
     pointer-events: none;
     }
 }
-    button{
+    .show{
         position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         right: 50px;
         bottom: 20px;
         z-index: 100;
         background-color: var(--accent);
-        color: var(--bg);
+        color: var(--accent-bg);
         border-radius: 20px;
         width: 100px;
         height: 40px;
         margin-top: auto;
         font-family: var(--sans);
         font-size: 20px;
-        color: var(--bg);
     }
 }
 .welcome{
@@ -85,3 +87,7 @@
     }
     }
 }
+a {
+    color: inherit;
+    text-decoration: none;
+  }

@@ -51,7 +51,7 @@ footer{
     width: fit-content;
     top: 40%;
 }
-@media (max-width: 9250px) {
+@media (max-width: 925px) {
   .socials {
     display: flex;
     flex-direction: column;
@@ -69,8 +69,6 @@ footer{
     }
 }
 .social-icon {
-    /*color: var(--accent);
-    fill: #ff0000;*/
         filter: saturate(390%);
         width: 80px;
         height: 80px;

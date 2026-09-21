@@ -95,7 +95,7 @@ body.stop-scroll {
   --accent-bg: #FCE9AB;
   --accent-border: #ce8d02;
     }
-    h2,.description, p, button,td,.buy,.option,.others{
+    h2,.description, p, button,td,.buy,.option,.others,.show{
       color: var(--accent-bg);
     }
     .social-icon,.contact-icon{
@@ -135,7 +135,7 @@ main{
 img {
     background: rgba(255, 0, 0, 0);
 }
-button{
+button,.show{
   background-color:  rgba(255, 0, 0, 0);
   border: 0;
 }
@@ -154,10 +154,6 @@ h1 {
   margin: 32px 0;
   font-family: var(--logo);
   color: var(--accent-bg);
-  /*@media (max-width: 1024px) {
-    font-size: 80px;
-    margin: 20px 0;
-  }*/
    @media (max-width: 768px) {
             font-size: 90px;
             margin: 0px 0;
@@ -233,4 +229,10 @@ header{
   width: 100%;
   align-items: center;
   justify-content: space-around;
+}
+button,.show {
+   &:hover {
+    transform: scale(1.2);
+        cursor: pointer;
+    }
 }
