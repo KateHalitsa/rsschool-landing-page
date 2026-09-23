@@ -73,6 +73,7 @@ header .container {
     height: 20px;
     border: none;
     background: transparent;
+    z-index: 1000;
 }
 
 .burger__line {
@@ -83,6 +84,7 @@ header .container {
     border-radius: 4px;
     background-color: #FAF6F2;
     transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+    z-index: 100;
 }
 
 .burger__line:first-child {
@@ -94,14 +96,30 @@ header .container {
     top: 50%;
     width: 20px;
 }
+ .burger--active .burger__line:first-child {
+    top: 50%;
+    transform: rotate(45deg);
+    width: 100%;
+  }
+
+  .burger--active .burger__line:last-child {
+    top: 50%;
+    transform: rotate(-45deg);
+    width: 100%;
+  }
+
+
 @media (max-width: 768px) {
     body {
         max-width: 768px;
         margin: 0 auto;
     }
-  .burger { 
-    display: block; 
-}
+    .burger {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 20px;
+  }
 
     .nav-links {
         display: none; 
@@ -115,7 +133,7 @@ header .container {
     right: 0;        
     width: 100%;     
     background-color: black;
-    padding: 20px 0; 
+    padding: 20px 0;
     z-index: 999; 
   
 }
@@ -134,7 +152,7 @@ header .container {
     position: absolute;
     left: 0;
     top: 0;
-    width: 0%;//переполняет
+    width: 100%;//переполняет
     height: 100vh;
     overflow-y: auto;
     background-color: var(--bg);
@@ -154,6 +172,7 @@ header .container {
   .nav--active {
     transform: none;
     visibility: visible;
+        margin: 0;
   }
 
   .nav__list {
@@ -175,6 +194,7 @@ header .container {
        @media (max-width: 768px) {
         width: 60px;
         height: 60px;
+        
        }
     .chandelier-icon {
     display: block;
@@ -188,6 +208,7 @@ header .container {
         background-repeat: no-repeat;
         object-fit: cover;
         transform: scale(1.3);
+        pointer-events: none;
     }
 
     [data-theme="dark"] & {
@@ -202,3 +223,7 @@ header .container {
     }
 }
 }
+@keyframes burgerAnimation {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
