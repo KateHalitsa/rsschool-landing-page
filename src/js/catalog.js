@@ -36,7 +36,6 @@ const category= option[0].innerText.toLowerCase();
         const shows = exportedArray.filter(show => show.category === category);
 const listElement = document.querySelector('.shows');
 
-        // 3. Превращаем массив объектов в массив HTML-строк и объединяем их в один текст
         const htmlContent = shows.map(show => {
             return `<div class="card">
                     <img src="${show.image}" alt="${show.alt}">
@@ -59,9 +58,8 @@ const listElement = document.querySelector('.shows');
                     <button class="buy"> Buy </button>
                   </div>
 `;
-        }).join(''); // .join('') убирает запятые между элементами массива
+        }).join('');
 
-        // 4. Вставляем сгенерированный HTML на страницу
         listElement.innerHTML = htmlContent;
 }
 addCards();

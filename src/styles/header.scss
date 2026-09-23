@@ -156,7 +156,7 @@ header .container {
     height: 100vh;
     overflow-y: auto;
     background-color: var(--bg);
-    transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    //transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
     transform: translateX(100%);
     visibility: hidden;
     background-color: black;
@@ -172,7 +172,9 @@ header .container {
   .nav--active {
     transform: none;
     visibility: visible;
-        margin: 0;
+    margin: 0;
+    transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+
   }
 
   .nav__list {
