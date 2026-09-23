@@ -1,3 +1,6 @@
+import data from '../data/shows.json'; 
+export const exportedArray = data;
+function addMore(){
 const descriptions = document.querySelectorAll('.description');
 
 descriptions.forEach((description) => {
@@ -10,7 +13,7 @@ descriptions.forEach((description) => {
 
         button.textContent = isExpanded ? 'Less':'More';
     });
-});
+});}
 const options = document.querySelectorAll('.option');
 
 options.forEach((option) => {
@@ -20,5 +23,46 @@ options.forEach((option) => {
         });
 
         option.classList.add('active');
-    });
-});
+        addCards();
+        addMore();       
+})});
+function addCards(){
+const option= document.querySelectorAll('.option.active');
+console.log('Элемент option:', option); 
+
+console.log('Текст внутри:', option[0]?.innerText);
+
+const category= option[0].innerText.toLowerCase();
+        const shows = exportedArray.filter(show => show.category === category);
+const listElement = document.querySelector('.shows');
+
+        // 3. Превращаем массив объектов в массив HTML-строк и объединяем их в один текст
+        const htmlContent = shows.map(show => {
+            return `<div class="card">
+                    <img src="${show.image}" alt="${show.alt}">
+                    <div class="description">
+                      <div class="description__text">
+                        <p>
+                        ${show.description}
+                        </p>
+                      </div>
+                      <button class="description__button" type="button">
+                          More
+                      </button>
+                    </div>
+                    <table>
+                    ${show.schedule.map(day => `<tr>
+                                                  <td><div class="date">${day.date}</div></td>
+                                                  <td>${day.times.map(time =>`<div>${time}</div>`).join('')}</td>
+                                                </<tr>`).join('')}
+                    </table>
+                    <button class="buy"> Buy </button>
+                  </div>
+`;
+        }).join(''); // .join('') убирает запятые между элементами массива
+
+        // 4. Вставляем сгенерированный HTML на страницу
+        listElement.innerHTML = htmlContent;
+}
+addCards();
+addMore();

@@ -1,0 +1,451 @@
+
+    [{
+      "title": "Hadestown",
+      "category":"musicals",
+      "image": "./src/assets/posters/Hadestown_musical_poster.png",
+      "alt": "Hadestown",
+      "description": "Welcome to HADESTOWN, where a song can change your fate. This acclaimed musical by singer-songwriter Anaïs Mitchell and director Rachel Chavkin is winner of 8 Tony Awards including Best Musical and the Grammy Award® for Best Musical Theater Album. It intertwines two mythic tales — that of young dreamers Orpheus and Eurydice, and that of King Hades and Queen Persephone — as it invites you on an unforgettable journey to the underworld and back. Performed by a vibrant ensemble of actors, singers, dancers, and musicians, HADESTOWN asks audiences to imagine how the world could be.",
+      "schedule": [
+        {
+          "date": "01.10",
+          "times": [
+            "15:00",
+            "19:00"
+          ]
+        },
+        {
+          "date": "15.10",
+          "times": [
+            "15:00",
+            "19:00"
+          ]
+        }
+      ],
+      "actions": {
+        "description": "More",
+        "purchase": "Buy"
+      }
+    },
+    {
+      "title": "Phantom of the Opera",
+      "category":"musicals",
+      "image": "./src/assets/posters/the_phantom_of_the_opera.jpg",
+      "alt": "Phantom of the Opera",
+      "description": "Phantom of the Opera is widely considered one of the world’s most beautiful and spectacular musicals. Since 1986, it has played to over 160 million people in 217 cities, 52 territories and 23 languages, Phantom is a global phenomenon! With a romantic, haunting and iconic musical score including The Phantom of the Opera, The Music of the Night and All I Ask of You, Phantom has captured the hearts and imagination of global audiences for almost 40 years.",
+      "schedule": [
+        {
+          "date": "02.10",
+          "times": [
+            "15:00",
+            "19:00"
+          ]
+        },
+        {
+          "date": "16.10",
+          "times": [
+            "15:00",
+            "19:00"
+          ]
+        }
+      ],
+      "actions": {
+        "description": "More",
+        "purchase": "Buy"
+      }
+    },
+    {
+      "title": "Into the Woods",
+      "category":"musicals",
+      "image": "./src/assets/posters/Into_the_Woods_poster.jpg",
+      "alt": "Into the Woods",
+      "description": "That's what Little Red, a Witch, Cinderella, the Baker, and his wife discover as they invade one another's stories and find themselves tangled in a web of unexpected consequences. They quickly find this web is too big to untangle on their own and that they must work together to set everything right in the kingdom. Into the Woods reminds us that only together can we defeat the wolves and giants of the world​. With a stunning, unforgettable score featuring \"No One is Alone,\" \"Children Will Listen,\" and \"Giants in the Sky,\" this iconic show will enchant, entrance, and delight!",
+      "schedule": [
+        {
+          "date": "03.10",
+          "times": [
+            "15:00",
+            "19:00"
+          ]
+        },
+        {
+          "date": "17.10",
+          "times": [
+            "15:00",
+            "19:00"
+          ]
+        }
+      ],
+      "actions": {
+        "description": "More",
+        "purchase": "Buy"
+      }
+    },
+    {
+      "title": "Death Note: The Musical",
+      "category":"musicals",
+      "image": "./src/assets/posters/death_note.jpg",
+      "alt": "Death Note: The Musical",
+      "description": "Death Note: The Musical is a stage production based on the Death Note manga series. The music was composed by Frank Wildhorn with lyrics by Jack Murphy and script by Ivan Menchell.",
+      "schedule": [
+        {
+          "date": "04.10",
+          "times": [
+            "15:00",
+            "19:00"
+          ]
+        },
+        {
+          "date": "18.10",
+          "times": [
+            "15:00",
+            "19:00"
+          ]
+        }
+      ],
+      "actions": {
+        "description": "More",
+        "purchase": "Buy"
+      }
+    },
+    {
+      "title": "Dracula The Musical",
+      "category":"musicals",
+      "image": "./src/assets/posters/Dracula_musical.jpg",
+      "alt": "Dracula The Musical",
+      "description": "Dracula The Musical is a thrilling drama of suspense and a Gothic romance of dreamlike temptation from the extraordinary team of Christopher Hampton, Don Black and Frank Wildhorn (Jekyll & Hyde, The Civil War).\nSet in Europe at the end of the Victorian Age, the story follows the famed vampire as he lusts for new blood. Jonathan Harker and Mina Murray fall victim to Dracula's unnatural charm and, along with Doctor Van Helsing, must fight Dracula's supernatural powers.",
+      "schedule": [
+        {
+          "date": "05.10",
+          "times": [
+            "15:00",
+            "19:00"
+          ]
+        },
+        {
+          "date": "19.10",
+          "times": [
+            "15:00",
+            "19:00"
+          ]
+        }
+      ],
+      "actions": {
+        "description": "More",
+        "purchase": "Buy"
+      }
+    },
+    {
+      "title": "Jekyll & Hyde",
+      "category":"musicals",
+      "image": "./src/assets/posters/jekyllandhyde.webp",
+      "alt": "Jekyll & Hyde",
+      "description": "Jekyll & Hyde is a 1990 musical based on the 1886 novella The Strange Case of Dr Jekyll and Mr Hyde by Robert Louis Stevenson. Originally conceived for the stage by Frank Wildhorn and Steve Cuden, it features music by Frank Wildhorn, a book by Leslie Bricusse and lyrics by all of them. After a world premiere run in Houston, Texas, the musical embarked on a national tour of the United States prior to its Broadway debut in 1997.",
+      "schedule": [
+        {
+          "date": "06.10",
+          "times": [
+            "15:00",
+            "19:00"
+          ]
+        },
+        {
+          "date": "20.10",
+          "times": [
+            "15:00",
+            "19:00"
+          ]
+        }
+      ],
+      "actions": {
+        "description": "More",
+        "purchase": "Buy"
+      }
+    },
+    {
+      "title": "Elisabeth",
+      "category":"musicals",
+      "image": "./src/assets/posters/Elisabeth.jpg",
+      "alt": "Elisabeth",
+      "description": "Elisabeth is a Viennese musical commissioned by the Vereinigte Bühnen Wien and originally produced in German, with a book and lyrics by Michael Kunze and music by Sylvester Levay. It portrays the life and death of Empress Elisabeth of Austria, also known as \"Sisi\", the wife of Emperor Franz Joseph I, from her engagement and marriage in 1854 to her murder in 1898 at the hands of the Italian anarchist Luigi Lucheni; it focuses on her growing obsession with death, as her marriage and the empire crumble around her just before the turn of the 20th century.",
+      "schedule": [
+        {
+          "date": "07.10",
+          "times": [
+            "15:00",
+            "19:00"
+          ]
+        },
+        {
+          "date": "21.10",
+          "times": [
+            "15:00",
+            "19:00"
+          ]
+        }
+      ],
+      "actions": {
+        "description": "More",
+        "purchase": "Buy"
+      }
+    },
+    {
+      "title": "Dance of the Vampires",
+      "category":"musicals",
+      "image": "./src/assets/posters/балВампиров.jpeg",
+      "alt": "Dance of the Vampires",
+      "description": "Dance of the Vampires is a musical adaptation of the 1967 Roman Polanski film (known as The Fearless Vampire Killers in the United States). Polanski also directed the musical’s original German-language production (titled Tanz der Vampire). The music was composed by Jim Steinman, orchestrated by Steve Margoshes, and Michael Kunze wrote the original German book and lyrics.",
+      "schedule": [
+        {
+          "date": "08.10",
+          "times": [
+            "15:00",
+            "19:00"
+          ]
+        },
+        {
+          "date": "22.10",
+          "times": [
+            "15:00",
+            "19:00"
+          ]
+        }
+      ],
+      "actions": {
+        "description": "More",
+        "purchase": "Buy"
+      }
+    },
+    {
+      "title": "The Rocky Horror Picture Show",
+      "category":"musicals",
+      "image": "./src/assets/posters/The-Rocky-Horror-Picture-Show.jpg",
+      "alt": "The Rocky Horror Picture Show",
+      "description": "The Rocky Horror Picture Show, musical comedy-horror film released in 1975 that has gained a cult following. It was directed by Jim Sharman and written by Sharman and Richard O’Brien. The film, and the stage musical on which it is based, is a tribute to B-movies of the 1930s–60s in the horror and science fiction genres. The Rocky Horror Picture Show came out of the 1960s counterculture in the United States, Canada, and western Europe, and it was one of the first musicals to include characters who had fluid gender identities. It is remarkable for the level of worship and obsession it inspires in fans, who create an immersive environment at screenings. As of 2025, it has continued to have limited screenings and may be considered one of the longest-running theatrical releases in film history.",
+      "schedule": [
+        {
+          "date": "31.10",
+          "times": [
+            "20:00",
+            "23:00"
+          ]
+        },
+        {
+          "date": "01.11",
+          "times": [
+            "0:00"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Hamilton",
+      "category":"musicals",
+      "image": "./src/assets/posters/Hamilton.png",
+      "alt": "Hamilton",
+      "description": "Hamilton: An American Musical, known simply as Hamilton, is a sung-and-rapped-through biographical musical with music, lyrics, and a book by Lin-Manuel Miranda. Based on the 2004 biography Alexander Hamilton by Ron Chernow, the musical covers the life of American Founding Father Alexander Hamilton and his involvement in the American Revolution and the political history of the early United States. Composed from 2008 to 2015, the music draws heavily from hip hop,[1] as well as R&B, pop, soul, and traditional-style show tunes. It casts non-white actors as the Founding Fathers of the United States and other historical figures. Miranda described Hamilton as about \"America then, as told by America now\".",
+      "schedule": [
+        {
+          "date": "10.10",
+          "times": [
+            "16:00",
+            "20:00"
+          ]
+        },
+        {
+          "date": "19.10",
+          "times": [
+            "18:00",
+            "21:00"
+          ]
+        }
+      ]
+    },
+{
+      "title": "Heathers",
+      "category":"musicals",
+      "image": "./src/assets/posters/Heather.jpg",
+      "alt": "Heathers",
+      "description": "Heathers the Musical, known colloquially as Heathers, is a musical by Laurence O'Keefe and Kevin Murphy, based on the 1988 film of the same name written by Daniel Waters. After a sold-out Los Angeles try-out, the show moved Off-Broadway in 2014, with US producers including J. Todd Harris, Amy Powers, RJ Hendricks, and Andy Cohen.",
+      "schedule": [
+        {
+          "date": "10.10",
+          "times": [
+            "16:00",
+            "20:00"
+          ]
+        },
+        {
+          "date": "19.10",
+          "times": [
+            "18:00",
+            "21:00"
+          ]
+        }
+      ]
+    },
+
+{
+      "title": "Wicked",
+      "category":"musicals",
+      "image": "./src/assets/posters/Wicked.png",
+      "alt": "Wicked",
+      "description": "Wicked (known in full as Wicked: The Untold Story of the Witches of Oz) is a musical with music and lyrics by Stephen Schwartz and a book by Winnie Holzman. It is loosely based on the 1995 novel of the same name by Gregory Maguire, a reimagining of the 1900 novel The Wonderful Wizard of Oz by L. Frank Baum and its 1939 film adaptation. Set in the Land of Oz before and after Dorothy Gale's arrival from Kansas, the musical explores the complex relationship between Elphaba Thropp and Glinda Upland – the future Wicked Witch of the West and Glinda the Good — as they are tested by their contrasting perspectives, shared love interest, and reactions to the Wizard's corrupt rule, culminating in Elphaba's tragic fall.",
+      "schedule": [
+        {
+          "date": "10.10",
+          "times": [
+            "16:00",
+            "20:00"
+          ]
+        },
+        {
+          "date": "19.10",
+          "times": [
+            "18:00",
+            "21:00"
+          ]
+        }
+      ]
+    },
+{
+      "title": "Mozart l'opera rock",
+      "category":"rock-operas",
+      "image": "./src/assets/posters/Mozart.png",
+      "alt": "Mozart l'opera rock",
+      "description": "Mozart, l'opéra rock ('Mozart, the rock opera') is a French musical with music by Dove Attia, Jean-Pierre Pilot, Olivier Schultheis, William Rousseau, Nicolas Luciani, Rodrigue Janois and François Castello, lyrics by Vincent Baguian and Patrice Guirao and a book by Attia and François Chouquet.[1] The show is a dramatization of the life of Wolfgang Amadeus Mozart, beginning from the age of 17 and culminating with his death in 1791 at the age of 35. It uses both original pop-rock compositions as well as pre-existing music composed by Mozart and other composers, including Antonio Salieri.",
+      "schedule": [
+        {
+          "date": "10.10",
+          "times": [
+            "16:00",
+            "20:00"
+          ]
+        },
+        {
+          "date": "19.10",
+          "times": [
+            "18:00",
+            "21:00"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Jesus Christ Superstar",
+      "category":"rock-operas",
+      "image": "./src/assets/posters/JesusChristSuperstar.jpg",
+      "alt": "Jesus Christ Superstar",
+      "description": "Jesus Christ Superstar is a sung-through rock opera with music by Andrew Lloyd Webber and lyrics by Tim Rice. Loosely based on the Gospel accounts of the Passion, the work interprets the psychology of Jesus and other characters, with much of the plot centred on Judas, who is disillusioned with the direction of Jesus' ministry. Contemporary attitudes, sensibilities, and slang pervade the rock opera's lyrics, and ironic allusions to modern life are scattered throughout the depiction of political events; stage and film productions accordingly contain many intentional anachronisms.",
+      "schedule": [
+        {
+          "date": "10.10",
+          "times": [
+            "16:00",
+            "20:00"
+          ]
+        },
+        {
+          "date": "19.10",
+          "times": [
+            "18:00",
+            "21:00"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Orpheus",
+      "category":"rock-operas",
+      "image": "./src/assets/posters/Orpheus.png",
+      "alt": "Orpheus",
+      "description": "Olga Vayner’s rock opera 'Orpheus' is a mythological thriller about choice, destiny, and love.The threads of gods’ and mortals’ fates intertwine in an intricate pattern. To bring back his lost beloved, Eurydice, the renowned hero Orpheus descends into the realm of the dead. There, he discovers that during his journey, the earth has been plunged into an endless winter—the result of the goddess Demeter’s grief over her daughter Persephone, who was abducted by Hades. Unwittingly, the hero finds himself at the epicenter of divine intrigues; now, not only his beloved’s future but the fate of the entire mortal world hinges on his decisions.Join us as we descend into the realm of Hades and emerge back into the light alongside Orpheus, finding our own path!",
+      "schedule": [
+        {
+          "date": "10.10",
+          "times": [
+            "16:00",
+            "20:00"
+          ]
+        },
+        {
+          "date": "19.10",
+          "times": [
+            "18:00",
+            "21:00"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Alice’s Adventures in Wonderland",
+      "category":"ballet",
+      "image": "./src/assets/posters/Alice.jpg",
+      "alt": "Alice’s Adventures in Wonderland",
+      "description": "Christopher Wheeldon’s Alice’s Adventures in Wonderland burst onto the stage in 2011 in an explosion of color, stage magic and inventive, sophisticated choreography. Joby Talbot’s score combines contemporary soundworlds with sweeping melodies that gesture to ballet scores of the 19th century. Bob Crowley’s wildly imaginative, eye-popping designs draw on everything from puppetry to projections to make Wonderland wonderfully real.",
+      "schedule": [
+        {
+          "date": "10.10",
+          "times": [
+            "16:00",
+            "20:00"
+          ]
+        },
+        {
+          "date": "19.10",
+          "times": [
+            "18:00",
+            "21:00"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sleeping Beauty: A Gothic Romance",
+      "category":"ballet",
+      "image": "./src/assets/posters/sleeping_beauty.jpg",
+      "alt": "Sleeping Beauty: A Gothic Romance",
+      "description": "Matthew Bourne's Sleeping Beauty: A Gothic Romance is a contemporary supernatural ballet production by British choreographer Sir Matthew Bourne that reimagines Tchaikovsky's classic fairy tale.",
+      "schedule": [
+        {
+          "date": "10.10",
+          "times": [
+            "16:00",
+            "20:00"
+          ]
+        },
+        {
+          "date": "19.10",
+          "times": [
+            "18:00",
+            "21:00"
+          ]
+        }
+      ]
+    },
+
+    {
+      "title": "The red shoes",
+      "category":"ballet",
+      "image": "./src/assets/posters/THE_RED_SHOES.jpg",
+      "alt": "The red shoes",
+      "description": "The Red Shoes is a ballet choreographed by Matthew Bourne using the music of Bernard Herrmann (1911–1975). It is based broadly on the 1948 film The Red Shoes by Michael Powell and Emeric Pressburger. The set and costume designs are by Lez Brotherston. The ballet was premiered on 21 November 2016 at the Theatre Royal, Plymouth by Bourne's ballet company, New Adventures.",
+      "schedule": [
+        {
+          "date": "10.10",
+          "times": [
+            "16:00",
+            "20:00"
+          ]
+        },
+        {
+          "date": "19.10",
+          "times": [
+            "18:00",
+            "21:00"
+          ]
+        }
+      ]
+    }
+
+    ]
+     
