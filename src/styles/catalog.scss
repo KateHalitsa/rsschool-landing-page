@@ -60,6 +60,9 @@
                     aspect-ratio: 3/4;
                     border-radius: 10px;
                 }
+                &.hidden{
+                    display: none;
+                }
             }
         }
     }

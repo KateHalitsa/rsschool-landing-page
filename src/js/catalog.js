@@ -15,6 +15,12 @@ descriptions.forEach((description) => {
     });
 });}
 const options = document.querySelectorAll('.option');
+const others = document.querySelector('.others');
+others.addEventListener('click', () => {
+const elements = document.querySelectorAll('.hidden');
+  elements.forEach(element=>element.classList.remove('hidden'));
+  others.style.display="none";
+})
 
 options.forEach((option) => {
     option.addEventListener('click', () => {
@@ -28,16 +34,13 @@ options.forEach((option) => {
 })});
 function addCards(){
 const option= document.querySelectorAll('.option.active');
-console.log('Элемент option:', option); 
-
-console.log('Текст внутри:', option[0]?.innerText);
 
 const category= option[0].innerText.toLowerCase();
-        const shows = exportedArray.filter(show => show.category === category);
+const shows = exportedArray.filter(show => show.category === category);
 const listElement = document.querySelector('.shows');
 
-        const htmlContent = shows.map(show => {
-            return `<div class="card">
+        const htmlContent = shows.map((show,i )=> {
+            return `<div class="card ${i>=6?'hidden':""}">
                     <img src="${show.image}" alt="${show.alt}">
                     <div class="description">
                       <div class="description__text">
@@ -61,6 +64,14 @@ const listElement = document.querySelector('.shows');
         }).join('');
 
         listElement.innerHTML = htmlContent;
+         if (shows.length > 6) {
+        others.style.display = '';
+    } else {
+        others.style.display = 'none';
+    }
 }
 addCards();
 addMore();
+
+
+
