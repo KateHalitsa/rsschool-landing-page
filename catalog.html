@@ -51,6 +51,31 @@
             </div>
 
           </section>
+          <div class="modal" id="booking-modal" aria-hidden="true">
+            <div class="modal__overlay"></div>
+
+            <div class="modal__content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+              <button class="modal__close" type="button" aria-label="Close">×</button>
+
+              <h2 id="modal-title"></h2>
+
+              <div class="modal__date">
+                <h3>Date</h3>
+                <div class="modal__date-options"></div>
+              </div>
+
+              <div class="modal__time">
+                <h3>Time</h3>
+                <div class="modal__time-options"></div>
+              </div>
+
+              <p class="modal__selected">
+                Selected: <span id="selected-show"></span>
+              </p>
+
+              <button class="modal__buy" type="button">Buy</button>
+            </div>
+          </div>
       </main>
       <footer>
           <div class="wapper">
