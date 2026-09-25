@@ -94,13 +94,39 @@ showsContainer.addEventListener('click', (event) => {
 
     openModal(show);
 });
+
+function handleBuy(){
+    alert("You bought the ticket!");
+    closeModal();
+}
 const closeBtn = modal.querySelector('.modal__close');
 const backdrop = modal.querySelector('.modal__overlay');
+const buyBtn=modal.querySelector('.modal__buy')
 closeBtn.addEventListener('click', closeModal);
 backdrop.addEventListener('click', closeModal);
-function openModal() {
+buyBtn.addEventListener('click', handleBuy);
+
+const dateOptions = document.querySelector('.modal__date-options');
+const timeOptions = document.querySelector('.modal__time-options');
+const modalTitle = document.querySelector('#modal-title');
+const selectedShow = document.querySelector('#selected-show');
+
+let currentShow = null;
+let selectedDate = null;
+let selectedTime = null;
+
+function openModal(show) {
+  currentShow = show;
   modal.classList.add('is-open');
   document.body.style.overflow = 'hidden';
+   modalTitle.textContent = show.title;
+
+    selectedDate = show.schedule[0].date;
+    selectedTime = show.schedule[0].times[0];
+
+    renderDateOptions();
+    renderTimeOptions();
+    updateSelectedInfo();
 }
 
 function closeModal() {
@@ -117,6 +143,65 @@ window.addEventListener('keydown', (e) => {
 });
 
 
+function renderDateOptions() {
+    dateOptions.innerHTML = currentShow.schedule.map(item => `
+        <button
+            class="modal-option ${item.date === selectedDate ? 'selected' : ''}"
+            type="button"
+            data-date="${item.date}"
+        >
+            ${item.date}
+        </button>
+    `).join('');
+}
+dateOptions.addEventListener('click', (event) => {
+    const button = event.target.closest('[data-date]');
 
+    if (!button) {
+        return;
+    }
 
+    selectedDate = button.dataset.date;
+
+    const selectedSchedule = currentShow.schedule.find(
+        item => item.date === selectedDate
+    );
+
+    selectedTime = selectedSchedule.times[0];
+
+    renderDateOptions();
+    renderTimeOptions();
+    updateSelectedInfo();
+});
+function renderTimeOptions() {
+    const selectedSchedule = currentShow.schedule.find(
+        item => item.date === selectedDate
+    );
+
+    timeOptions.innerHTML = selectedSchedule.times.map(time => `
+        <button
+            class="modal-option ${time === selectedTime ? 'selected' : ''}"
+            type="button"
+            data-time="${time}"
+        >
+            ${time}
+        </button>
+    `).join('');
+}
+timeOptions.addEventListener('click', (event) => {
+    const button = event.target.closest('[data-time]');
+
+    if (!button) {
+        return;
+    }
+
+    selectedTime = button.dataset.time;
+
+    renderTimeOptions();
+    updateSelectedInfo();
+});
+function updateSelectedInfo() {
+    selectedShow.textContent =
+        `${currentShow.title} — ${selectedDate} at ${selectedTime}`;
+}
 

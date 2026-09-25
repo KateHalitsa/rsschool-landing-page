@@ -1,3 +1,5 @@
+@import 'catalog';
+
 .modal {
   position: fixed;
   top: 0;
@@ -31,3 +33,48 @@
   max-width: 500px;
   width: 100%;
 }
+.modal-option {
+    padding: 10px 20px;
+    border: 2px solid var(--accent);
+    background: transparent;
+    cursor: pointer;
+
+    &.selected {
+        background: var(--accent);
+        color: white;
+    }
+}
+.modal__buy{
+    @include buy-button;
+}
+.modal__date, .modal__time,#modal-title{
+    margin: 0 auto;
+    width: 50%;
+}
+.modal__close{
+    position: relative;
+    margin-left: auto;
+    width: 30px;
+    left: 90%;
+}
+.cross {
+    position: absolute;
+    right: 0;
+    display: block;
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--accent-border);
+    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+    z-index: 100;
+}
+.line:first-child {
+    top: 50%;
+    transform: rotate(45deg);
+    width: 100%;
+  }
+
+  .line:last-child {
+    top: 50%;
+    transform: rotate(-45deg);
+    width: 100%;
+  }
