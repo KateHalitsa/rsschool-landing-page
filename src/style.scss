@@ -92,6 +92,13 @@ body.stop-scroll {
     .content button {
       color: var(--accent-bg);
     }
+    .modal__date, .modal__time, #modal-title,.modal-option,.modal__selected{
+      color: var(--accent);
+    }
+    .modal-option{
+      &.selected{
+      color: var(--accent-bg);
+    }}
     h1, .welcome p{
         --accent: #FDB515;
   --accent-bg: #FCE9AB;

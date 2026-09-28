@@ -78,3 +78,13 @@
     transform: rotate(-45deg);
     width: 100%;
   }
+.modal__actions {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  flex-direction: column;
+}
+.modal__selected,
+.modal__buy {
+  margin-left: 0;
+}
