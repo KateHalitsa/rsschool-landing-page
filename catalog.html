@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/header.module.scss">
+    <link rel="icon" href="./src/assets/icons/chandelier-on.png">
+    <title>rsschool-landing-page</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+              <div class="container header__container">
+              <div class="logo">
+                   <a href="./index.html">Phamtasmogoria</a>
+              </div>
+              <nav class="nav" id="nav">
+                      <ul class="list-reset nav__list">
+                          <li class="nav__item"> 
+                              <a href="./#hero" class="nav__link">Home</a></li>
+                          <li class="nav__item">
+                              <a href="./#premiere" class="nav__link">Premiere</a></li>
+                          <li class="nav__item">
+                              <a href="./#about" class="nav__link">About</a></li>
+                          <li class="nav__item">
+                              <a href="./#cast" class="nav__link">Cast</a></li>
+                      </ul>
+              </nav>
+              <div class="theme_changer">
+                <button id="theme-button">
+                <span class="chandelier-icon"></span>
+                </button>
+              </div>
+                 <button class="btn-reset burger" id="burger">
+                      <span class="burger__line"></span>
+                      <span class="burger__line"></span>
+                  </button>
+      </div>
+      </header>
+      <main>
+          <section class="catalog" id="catalog">
+            <div class="wapper">
+                <div class="switcher">
+                    <div class="option active">Musicals</div>
+                    <div class="option">Rock-operas</div>
+                    <div class="option">Ballet</div>
+                </div>
+                <div class="shows">
+                </div>
+              <button class="others"> Others </button>
+            </div>
+
+          </section>
+          <div class="modal" id="booking-modal" >
+            <div class="modal__overlay"></div>
+
+            <div class="modal__content" >
+              <button class="modal__close" >
+                 <span class="cross line"></span>
+                 <span class="cross line"></span>
+              </button>
+
+              <h2 id="modal-title"></h2>
+
+              <div class="modal__date">
+                <h3>Date</h3>
+                <div class="modal__date-options"></div>
+              </div>
+
+              <div class="modal__time">
+                <h3>Time</h3>
+                <div class="modal__time-options"></div>
+              </div>
+              <div class="modal__actions">
+              <p class="modal__selected">
+                Selected: <span id="selected-show"></span>
+              </p>
+
+              <button class="modal__buy" type="button">Buy</button>
+            </div>
+            </div>
+          </div>
+      </main>
+      <footer>
+          <div class="wapper">
+            <div class="windows">
+              <div class="gothic-window">
+                <div class="socials">
+                <img class="social-icon" src="./src/assets/icons/img.png" alt="Twitter">
+                <img class="social-icon" src="./src/assets/icons/img2.png" alt="Instagram">
+                <img class="social-icon" src="./src/assets/icons/img3.png" alt="Facebook">
+              </div>
+              </div>
+              <div class="gothic-window">
+                  <img class="basement" src="./src/assets/decore/ph.png" alt="">
+              </div>
+              <div class="gothic-window">
+                <div class="contacts">
+                  <div class="contact">
+                    <img class="contact-icon" src="./src/assets/icons/tel.png" alt=""><p>+1 248-434-5508</p>
+                  </div>
+                  <div class="contact">
+                    <img class="contact-icon" src="./src/assets/icons/loc.png" alt=""><p>7788 Bobbidi-Boo St.73,LG</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p>2026 <a href="https://github.com/KateHalitsa" target="_blank" class="nav__link">Github</a></p>
+          </div>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/js/catalog.js"></script>
+
+  </body>
+</html>

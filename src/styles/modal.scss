@@ -1,0 +1,90 @@
+@import 'catalog';
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.modal.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal__content {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+}
+.modal-option {
+    padding: 10px 20px;
+    border: 2px solid var(--accent);
+    background: transparent;
+    cursor: pointer;
+
+    &.selected {
+        background: var(--accent);
+        color: white;
+    }
+}
+.modal__buy{
+    @include buy-button;
+}
+.modal__date, .modal__time,#modal-title{
+    margin: 0 auto;
+    width: 50%;
+}
+.modal__close{
+    position: relative;
+    margin-left: auto;
+    width: 30px;
+    left: 90%;
+}
+.cross {
+    position: absolute;
+    right: 0;
+    display: block;
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--accent-border);
+    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+    z-index: 100;
+}
+.line:first-child {
+    top: 50%;
+    transform: rotate(45deg);
+    width: 100%;
+  }
+
+  .line:last-child {
+    top: 50%;
+    transform: rotate(-45deg);
+    width: 100%;
+  }
+.modal__actions {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  flex-direction: column;
+}
+.modal__selected,
+.modal__buy {
+  margin-left: 0;
+}

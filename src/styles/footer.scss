@@ -1,0 +1,85 @@
+footer{
+     width: 100%;
+    height: 100%;
+    background: var(--accent-border);
+    color: #906200;
+    font-size: 30px;
+    padding: 10px;
+    @media (max-width: 1024px) {
+    font-size: 30px;
+}
+    .windows{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 20px;
+        @media (max-width: 768px) {
+            flex-direction: column;
+            gap:10px;
+            .gothic-window{
+                width: 100%;
+                .socials{
+                    flex-direction: row;
+                    top:40%;
+                }
+            }
+        }
+    }
+    .nav__link{
+        font-size: 30px;
+    }
+}
+.gothic-window {
+    width: 30%;
+    height: 350px;
+    background: var(--accent);
+    position: relative;
+    overflow: hidden;
+    
+    border-radius: 280px 280px 0 0;
+    .contact{
+        display: flex;
+        margin: 10px;
+    }
+    p{
+        font-size: 20px;
+    }
+}
+.socials,.contacts{
+    position: relative;
+    margin: auto;
+    width: fit-content;
+    top: 40%;
+}
+@media (max-width: 925px) {
+  .socials {
+    display: flex;
+    flex-direction: column;
+    top: 20%;
+    gap:5px;
+  }
+}
+.contacts{
+    display: flex;
+    gap:10px;
+    flex-direction: column;
+    img{
+        width: 30px;
+        height: 30px;
+    }
+}
+.social-icon {
+        filter: saturate(390%);
+        width: 80px;
+        height: 80px;
+        background-color: #efe8d5;
+        border-radius: 50px;
+
+}
+.basement{
+   aspect-ratio: 4/3;
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+    
+}
